@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="myapp" ng-controller="myCtrl">
+  <ul class="nav nav-pills" style="height:45px;background-color:rgb(0,21,136)" ng-include="'online.html'">
+  </ul>
+  <ul class="nav p-3 justify-content-center" ng-include="'menu.html'">
+  </ul>
+  <article>
+    <ng-view></ng-view>
+  </article>
+  
+</body>
+<footer ng-include="'footer.html'">
+</footer>
+<script src="https://kit.fontawesome.com/629bca5f0c.js" crossorigin="anonymous"></script>
+<script src="angular.min.js"></script>
+<script src="code.angularjs.org_1.8.2_angular-route.min.js"></script>
+<script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html> 

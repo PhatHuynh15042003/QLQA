@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <main class="page">
+    <section class="shopping-cart dark">
+      <div class="container">
+           <div class="block-heading">
+             <h2>GIỎ HÀNG</h2>
+             <p>Nơi thanh toán quần áo CLB chelsea</p>
+           </div>
+           <div class="content">
+          <div class="row">
+            <div class="col-md-12 col-lg-8" >
+              <div class="items" >
+                <div class="product" >
+                  <div class="row" ng-repeat="item in giohang track by $index">
+                    <div class="col-md-3">
+                      <img class="img-fluid mx-auto d-block image" src="images/{{item.images}}" style="width:40px;height:40px">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="info">
+                        <div class="row">
+                          <div class="col-md-4 product-name">
+                            <div class="product-name">
+                              <a href="#" style="text-decoration: none ;">{{item.name}}</a>
+                              <div class="product-info">
+                                <div>Số áo: <span class="value">9</span></div>
+                                <div>Loại áo <span class="value">Áo thun</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 quantity">
+                            <label for="quantity" >Số lượng:</label>
+                            <input id="quantity" type="number" class="form-control quantity-input" ng-model="item.soluong">
+                          </div>
+                          <div class="col-md-3 price">
+                            <span>{{item.price*item.soluong}} đ</span>
+                          </div>
+                          <div class="col-md-2">
+                            <a href="" ng-click="xoa(id)" style="text-decoration: none;">Xoá</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              <a href="" ng-click="xoaHet()" style="text-decoration: none;margin-left:800px;">Xoá hết</a>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="summary">
+                <h3>Summary</h3>
+                <div class="summary-item"><span class="text">Subtotal</span><span class="price">{{tinhTongTien()}}</span></div>
+                <div class="summary-item"><span class="text">Discount</span><span class="price" ng-model="discount">{{discount | percentage: 2}}</span></div>
+                <div class="summary-item"><span class="text">Shipping</span><span class="price" ng-model="fee">{{fee | currency:'đ'}}</span></div>
+                <div class="summary-item"><span class="text">Total</span><span class="price">{{tinhTongTien() * (1-discount) + fee}}</span></div>
+                <button type="button" class="btn btn-primary btn-lg btn-block">THANH TOÁN</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+   </section>
+ </main>
+</body>
+<script src="https://kit.fontawesome.com/629bca5f0c.js" crossorigin="anonymous"></script>
+<script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html>

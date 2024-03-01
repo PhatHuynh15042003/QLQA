@@ -1,0 +1,51 @@
+<div class="header-login" style="margin-left:15px;">
+    <div class="row">
+      <div class="col-lg-5 img-thumbnail" style="width:500px;height:290px;margin-left: 15px;">
+          <div class="mb-3 row" style="margin-top:15px">
+            <form name="checkVar" class="form-login">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label> <label class="text-danger" ng-hide="checkVar.email.$valid"check>(Email Không hợp lệ)</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" ng-model="email" name="email" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label> <label class="text-danger" ng-hide="checkVar.pass.$valid"check>(Pass Không hợp lệ)</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="pass" ng-model="pass" required>
+              </div>
+            </form>
+            <div class="service-login">
+<div class="logo-supporter1" class="d-flex justify-content-between text-center">
+  <a href=""><img src="images/facebook.png" alt=""></a>
+  <a href=""><img src="images/google.png" alt=""></a>
+  <a href=""><img src="images/instagram.png" alt=""></a>
+</div>
+<div class="button-submit" style="margin-left:345px;margin-top:10px">
+  <input class="btn btn-primary" type="submit" value="Submit">
+</div>
+<div class="content-login" style="margin-top:-5px">
+  <a href="" style="text-decoration: none;"><h9>Bạn chưa có tài khoản?</h9></a>
+</div>
+</div>
+</div>
+      </div>
+      <div class="col-lg-7">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/quangcao1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/quangcao4.png" class="d-block w-100" alt="..." >
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

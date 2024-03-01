@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "Áo Chelsea Rêu 2022 2023",
+        "price": 110000,
+        "images": "shirt-chelsea1.jpg"
+    }
+    ,
+    {
+        "id": 2,
+        "name": "Áo Chelsea Trắng đen Trivago 2023",
+        "price": 150000,
+        "images": "shirt-chelsea2.jpg"
+    }
+    ,
+    {
+        "id": 3,
+        "name": "Áo Chelsea Ngọc SV 2023",
+        "price": 80000,
+        "images": "shirt-chelsea3.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Áo Chelsea Trắng Mè 2023",
+        "price": 1900000,
+        "images": "shirt-chelsea4.jpg"
+    }
+    ,
+    {
+        "id": 5,
+        "name": "Áo Chelsea Xanh ĐK Mới 2023",
+        "price": 130000,
+        "images": "shirt-chelsea5.jpg"
+    }
+    ,
+    {
+        "id": 6,
+        "name": "Áo Chelsea Ngọc Zuka",
+        "price": 160000,
+        "images": "shirt-chelsea6.jpg"
+    }
+    ,
+    {
+        "id": 7,
+        "name": "Áo Chelsea Bích 2022",
+        "price": 150000,
+        "images": "shirt-chelsea7.jpg"
+    }
+    ,
+    {
+        "id": 8,
+        "name": "Áo Chelsea Trắng Đốm 2022",
+        "price": 180000,
+        "images": "shirt-chelsea8.jpg"
+    }
+    ,{
+        "id": 9,
+        "name": "Áo Chelsea 2023",
+        "price": 150000,
+        "images": "shirt-chelsea9.jpg"
+    }
+]
